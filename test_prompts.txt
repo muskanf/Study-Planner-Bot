@@ -1,0 +1,68 @@
+Welcome to our project planner chatbot!
+Heads up! Be sure to tell the bot how many hours you want to study per day and how long your study breaks should be.
+Our poor PlannerPro has a bit of short-term memory loss, so it needs all the info in each message to build your plan right!
+
+
+Prompt 1:
+I have an exam on May 15 and a group project due on May 16.  
+I want to study for 5 hours every day, only in the morning.  
+Please include a 30-minute break after every 1 hour of studying.  
+Build me a full plan starting from May 10 until everything is done.
+
+Expected Response Summary:
+PlannerPro will respond with a detailed schedule broken down by date from May 10 to May 16, with alternating study sessions for the exam and group project in the morning.  
+Each hour-long session will be followed by a 30-minute break, and May 15 and May 16 will be reserved for final review and project submission.  
+
+**Current Plan**
+- Exam on May 15  
+- Group project due May 16  
+- Study 5 hours daily in the morning  
+- 30-minute breaks every hour  
+- Plan runs from May 10 to May 16
+
+---
+
+Prompt 2:
+I have a midterm on May 20 and a paper due on May 21.  
+I can only study in the evenings, and I want to do 3 hours each day.  
+Please include a 20-minute break after every hour.
+
+Expected Response Summary:
+PlannerPro will create an evening-based plan from May 15 to May 21, allocating 3 one-hour blocks per day with 20-minute breaks in between, alternating between midterm and paper preparation.
+
+**Current Plan**
+- Midterm on May 20  
+- Paper due May 21  
+- Study 3 hours daily in the evening  
+- 20-minute breaks every hour  
+- Plan begins May 15
+
+---
+
+Prompt 3:
+Can you help me prepare for my quiz on May 10?  
+I can study 2 hours a day anytime, but I need a 15-minute break in the middle.
+
+Expected Response Summary:
+PlannerPro will create 2 consecutive 1-hour blocks with a 15-minute break between, beginning several days before May 10.
+
+**Current Plan**
+- Quiz on May 10  
+- Study 2 hours per day (time flexible)  
+- 15-minute break in between  
+- Starts plan a few days in advance
+
+---
+
+Prompt 4 (Edge case - missing break info):
+I have an exam on May 25 and want to study 4 hours a day in the afternoon.
+
+Expected Response Summary:
+PlannerPro will likely generate 4 consecutive afternoon hours of study but will not include breaks because they weren't specified.  
+To test: check if the assistant prompts for missing break info or just skips it.
+
+**Current Plan**
+- Exam on May 25  
+- 4 hours of afternoon study per day  
+- No breaks included (unless explicitly asked)
+"""
